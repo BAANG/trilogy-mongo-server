@@ -1,2 +1,6 @@
 const router = require("express").Router();
-const userController = require("../../controllers/userController");
+const userRoutes = require("./user");
+
+router.use("/user", userRoutes);
+
+module.exports = router;
