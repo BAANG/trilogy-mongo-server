@@ -5,9 +5,9 @@ const userController = require("../../controllers/userController");
 router.route("/alldata")
     .get(userController.findAll)
 
-// router.route("/makeuser")
-//     .post(userController.create)
+router.route("/makeuser")
+    .post(userController.create)
 
-// router.route("/update")
-//     .put(userController.update)
+router.route("/update")
+    .put(userController.update)
 module.exports = router;
